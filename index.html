@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepa Juice World</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ff9966;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #ffcccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .header-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-buttons a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    .header-buttons a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-basis: calc(31% - 2rem);
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .product-card h2 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #ffcccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    @media (max-width: 991px) {
+      .product-card {
+        flex-basis: calc(48% - 2rem);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .product-card {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deepa Juice World</h1>
+    <div class="header-buttons">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+  <main>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200/ff6666/fff?text=Juice+1" alt="Juice 1">
+      <h2>Orange Juice</h2>
+      <p>Freshly squeezed oranges, perfect for breakfast or a refreshing drink any time of the day.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200/66ff66/fff?text=Juice+2" alt="Juice 2">
+      <h2>Apple Juice</h2>
+      <p>Crisp and delicious apple juice, made from hand-picked apples.</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200/6666ff/fff?text=Juice+3" alt="Juice 3">
+      <h2>Blueberry Juice</h2>
+      <p>Sweet and tangy blueberry juice, packed with antioxidants and flavor.</p>
+      <button>Buy Now</button>
+    </div>
+  </main>
+  <footer>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </footer>
+</body>
+</html>
